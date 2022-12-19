@@ -1,0 +1,706 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Currents2D3D.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Currents2D3D.ico"
+IDR_CURRENTS3D          ICON    DISCARDABLE     "res\\Currents3D.ico"
+IDR_CURRENTS2D          ICON    DISCARDABLE     "res\\currents2D.ico"
+IDI_ICON1               ICON    DISCARDABLE     "res\\icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDR_CURRENTS2D          BITMAP  MOVEABLE PURE   "res\\mainfram.bmp"
+IDR_CURRENTS3D          BITMAP  MOVEABLE PURE   "res\\currents.bmp"
+IDR_REBAR               BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+IDR_TOOLBAR1            BITMAP  DISCARDABLE     "res\\toolbar1.bmp"
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\3d.bmp"
+IDB_AGRIS               BITMAP  DISCARDABLE     "res\\agris.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_CURRENTS2D TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    SEPARATOR
+    BUTTON      ID_EDIT_COPY
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_TOOLS_ARROWPROPERTIES
+END
+
+IDR_CURRENTS3D TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_TOOLS_IMAGESETUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HHNOTIFICATION
+        MENUITEM SEPARATOR
+        MENUITEM "&About Currents2D3D...",      ID_APP_ABOUT
+    END
+END
+
+IDR_CURRENTS3D MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM SEPARATOR
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save as Bitmap\tCtrl+S",     ID_FILE_SAVE
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "Fonts...",                    ID_TOOLS_FONTPROPERTIES3
+        MENUITEM "Image Setup...",              ID_TOOLS_IMAGESETUP
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HHNOTIFICATION
+        MENUITEM SEPARATOR
+        MENUITEM "&About Currents2D3D...",      ID_APP_ABOUT
+    END
+END
+
+IDR_CURRENTS2D_GRAYED MENU DISCARDABLE 
+BEGIN
+    MENUITEM "&File",                       65535, GRAYED
+    MENUITEM "&Edit",                       65535, GRAYED
+    MENUITEM "&View",                       65535, GRAYED
+    MENUITEM "Tools",                       65535, GRAYED
+    MENUITEM "&Help",                       65535, GRAYED
+END
+
+IDR_CURRENTS2D MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "Zoom to &Fit",                ID_VIEW_ZOOMTOFIT
+    END
+    POPUP "Tools"
+    BEGIN
+        MENUITEM "Arrow properties...",         ID_TOOLS_ARROWPROPERTIES
+        MENUITEM "Fonts...",                    ID_TOOLS_FONTPROPERTIES
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HHNOTIFICATION
+        MENUITEM SEPARATOR
+        MENUITEM "&About Currents2D...",        ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 247, 127
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Currents2D"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,26,21,20
+    LTEXT           "Super Currents Version 1.0",IDC_STATIC,39,14,119,8,
+                    SS_NOPREFIX
+    LTEXT           "by  Agris Klimkans\nDep. of Physical Chemistry\nChalmers University of Technology\nCopyright (C) 1999",
+                    IDC_STATIC,40,31,113,39
+    LTEXT           "        Calculations are based on the\n            superconductivity model\n                  by Sven Larsson\n Chemical Physics 236, 133-150 (1998)",
+                    IDC_STATIC,15,74,129,35
+    DEFPUSHBUTTON   "OK",IDOK,172,99,50,14,WS_GROUP
+    CONTROL         153,IDC_STATIC,"Static",SS_BITMAP,163,14,69,75
+END
+
+IDD_ARROWS DIALOGEX 0, 0, 175, 101
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "Arrow properties"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Arrow length (in units of bond length)",
+                    IDC_STATIC_ARROWS_LENGTH,12,18,120,10
+    EDITTEXT        IDC_EDIT_ARROWS_LENGTH,133,16,34,12,ES_AUTOHSCROLL
+    LTEXT           "Arrow head angle (degrees)",IDC_STATIC_ARROWS_ANGLE,40,
+                    36,88,9
+    EDITTEXT        IDC_EDIT_ARROWS_ANGLE,133,34,34,12,ES_AUTOHSCROLL
+    LTEXT           "Maximum current width (pixels)",IDC_STATIC_ARROWS_WIDTH,
+                    31,53,97,10
+    EDITTEXT        IDC_EDIT_ARROWS_WIDTH,133,51,25,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_ARROWS_WIDTH,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ARROWKEYS,162,51,9,12
+    PUSHBUTTON      "OK",IDC_BUTTON_ARROWS_OK,5,76,72,18
+    PUSHBUTTON      "Cancel",IDC_BUTTON_ARROWS_CANCEL,98,76,73,18
+END
+
+IDR_CURRENTS2D DIALOG DISCARDABLE  0, 0, 496, 45
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Cu atoms along side",IDC_STATIC_NMBCUATOMS,5,5,65,10
+    EDITTEXT        IDC_EDIT_NMBCUATOMS,71,3,28,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_NMBCUATOMS,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,99,3,11,
+                    14
+    LTEXT           "External magnetic field (in Gauss)",
+                    IDC_STATIC_EXTMAGNFIELD,113,6,107,9
+    EDITTEXT        IDC_EDIT_EXTMAGNFIELD,219,4,50,12,ES_AUTOHSCROLL
+    LTEXT           "Cu-Cu distance (Angstroms)",IDC_STATIC_CUCUDISTANCE,271,
+                    6,89,11
+    EDITTEXT        IDC_EDIT_CUCUDIST,360,4,30,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Calculate and plot",IDC_BUTTON_CALCANDPLOT,418,4,66,36
+    LTEXT           "Electrons removed",IDC_STATIC_ELECTRONS_REMOVED,5,28,63,
+                    10
+    EDITTEXT        IDC_EDIT_ELECTRONS_REMOVED,71,27,27,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_ELECTRONS_REMOVED,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,99,27,11,
+                    13
+    LTEXT           "Zoom Factor",IDC_STATIC_ZOOM_FACTOR,114,28,43,10
+    EDITTEXT        IDC_EDIT_ZOOM_FACTOR,157,26,48,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Apply Zoom",IDC_BUTTON_APPLY_ZOOM,212,24,47,16
+    PUSHBUTTON      "Zoom to Fit",ID_VIEW_ZOOMTOFIT,264,24,47,16
+    GROUPBOX        "",IDC_STATIC_SCF,323,15,86,25
+    CONTROL         "",IDC_CHECK_ISSCF,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,329,26,9,8
+    CTEXT           "Self-consistent current calculation",IDC_STATIC,339,21,
+                    69,17
+END
+
+IDR_CURRENTS3D DIALOG DISCARDABLE  0, 0, 448, 44
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Cu atoms along side",IDC_STATIC_NMBCUATOMS3,5,5,65,10
+    EDITTEXT        IDC_EDIT_NMBCUATOMS3,71,3,28,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_NMBCUATOMS3,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,99,3,11,
+                    14
+    LTEXT           "Unit cells along the c direction",
+                    IDC_STATIC_UNITCELLS_C,122,6,96,10,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_UNITCELLSC,220,5,28,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_UNITCELLSC,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,248,5,11,
+                    14
+    GROUPBOX        "",IDC_STATIC_SCF3,275,5,86,28
+    CONTROL         "",IDC_CHECK_ISSCF3,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,281,16,9,8
+    CTEXT           "Self-consistent current calculation",IDC_STATIC3,291,12,
+                    69,17
+    PUSHBUTTON      "Calculate and plot",IDC_BUTTON_CALCANDPLOT3,366,5,66,36
+    LTEXT           "Electrons removed",IDC_STATIC_ELECTRONS_REMOVED3,5,28,
+                    63,10
+    EDITTEXT        IDC_EDIT_ELECTRONS_REMOVED3,71,27,27,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_ELECTRONS_REMOVED3,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,99,27,11,
+                    13
+    LTEXT           "External magnetic field (in Gauss)",
+                    IDC_STATIC_EXTMAGNFIELD3,117,29,107,9
+    EDITTEXT        IDC_EDIT_EXTMAGNFIELD3,223,27,50,12,ES_AUTOHSCROLL
+END
+
+IDD_PP_OBJTORENDER DIALOG DISCARDABLE  0, 0, 195, 127
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Object"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Cu-Cu bond electric currents and magnetic fields",
+                    IDD_PP_RENDER_RADIO_CURR1D,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,13,42,168,10
+    CONTROL         "3D electric currents",IDD_PP_RENDER_RADIO_CURR3D,"Button",
+                    BS_AUTORADIOBUTTON,13,58,77,10
+END
+
+IDD_PP_RENDMETHOD DIALOG DISCARDABLE  0, 0, 167, 127
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Method"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Volume Ray Cast Composite",
+                    IDD_PP_RENDMETHOD_VOLRAYCAST_COMPOSITE,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,13,15,105,10
+    CONTROL         "Volume Ray Cast Max Intensity Projection",
+                    IDD_PP_RENDMETHOD_VOLRAYCASTMIP,"Button",
+                    BS_AUTORADIOBUTTON,13,26,147,10
+    CONTROL         "Volume Ray Cast Isosurface",
+                    IDD_PP_RENDMETHOD_VOLRAYCASTISOSURF,"Button",
+                    BS_AUTORADIOBUTTON,13,36,147,10
+    LTEXT           "Suggested Isosurface value :",
+                    IDD_PP_RENDMETHOD_VOLRAYCASTISOSURF_SUGGESTED,25,50,135,
+                    12,NOT WS_GROUP
+    LTEXT           "Isosurface value",
+                    IDD_PP_RENDMETHOD_VOLRAYCASTISOSURF_STATIC,26,65,53,12
+    EDITTEXT        IDD_PP_RENDMETHOD_VOLRAYCASTISOSURF_EDIT,83,63,40,14,
+                    ES_AUTOHSCROLL
+    CONTROL         "Volume Streamlines",IDD_PP_RENDMETHOD_STREAMLINES,
+                    "Button",BS_AUTORADIOBUTTON,13,80,77,10
+    CONTROL         "Volume Streamlines with Tubes",
+                    IDD_PP_RENDMETHOD_STREAMLINESWITHTUBES,"Button",
+                    BS_AUTORADIOBUTTON,13,91,114,10
+    CONTROL         "HedgeHog",IDD_PP_RENDMETHOD_HEDGEHOG,"Button",
+                    BS_AUTORADIOBUTTON,13,103,51,10
+END
+
+IDD_PP_ATOMS DIALOG DISCARDABLE  0, 0, 195, 127
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Atoms"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Cu(2) - first layer",IDC_PP_ATOMS_Cu2_1,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,7,7,66,10
+    CONTROL         "Cu(2) - second layer",IDC_PP_ATOMS_Cu2_2,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,7,20,79,10
+    CONTROL         "O(2) - first layer",IDC_PP_ATOMS_O2_1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,34,63,10
+    CONTROL         "O(2) - second layer",IDC_PP_ATOMS_O2_2,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,49,75,10
+    CONTROL         "Y layer",IDC_PP_ATOMS_Y,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,64,37,10
+    CONTROL         "Ba layer",IDC_PP__ATOMS_BA,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,78,41,10
+    CONTROL         "O(4) layer",IDC_PP_ATOMS_O4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,92,46,10
+    CONTROL         "O(1) layer",IDC_PP_ATOMS_O1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,101,44,46,10
+    CONTROL         "Cu(1) layer",IDC_PP_ATOMS_CU1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,102,62,49,10
+END
+
+IDD_PP_RENDREGIONS DIALOG DISCARDABLE  0, 0, 195, 127
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "Regions"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Original magnetic field",IDD_RENDREGIONS_ORIGINAL,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP,34,20,120,10
+    CONTROL         "Strengthened magnetic field",IDD_RENDREGIONS_STRENGTH,
+                    "Button",BS_AUTORADIOBUTTON,34,43,120,10
+    CONTROL         "Weakened magnetic field",IDD_RENDREGIONS_WEAKENED,
+                    "Button",BS_AUTORADIOBUTTON,34,66,120,10
+    CONTROL         "All fields",IDD_RENDREGIONS_ALL,"Button",
+                    BS_AUTORADIOBUTTON,34,89,120,10
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Currents2D3D MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Currents2D3D\0"
+            VALUE "LegalCopyright", "Copyright (C) 1999\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Currents2D3D.EXE\0"
+            VALUE "ProductName", "Currents2D3D Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 120
+    END
+
+    IDD_ARROWS, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 171
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 94
+    END
+
+    IDR_CURRENTS2D, DIALOG
+    BEGIN
+        RIGHTMARGIN, 484
+        BOTTOMMARGIN, 44
+    END
+
+    IDR_CURRENTS3D, DIALOG
+    BEGIN
+        RIGHTMARGIN, 436
+    END
+
+    IDD_PP_OBJTORENDER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 120
+    END
+
+    IDD_PP_RENDMETHOD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 160
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 120
+    END
+
+    IDD_PP_ATOMS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 120
+    END
+
+    IDD_PP_RENDREGIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 120
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Currents2D3D"
+    IDR_CURRENTS2D          "\nCurrents2D\nCurrents2D\n\n\nCurrents2D3D.Document\nCurrents2D Document"
+    IDR_CURRENTS3D          "\nCurrents3D\nCurrents3D\n\n\nCurrents3D.Document\nCurrents3D Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Currents2D3D"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the image as bitmap\nSave as bitmap"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TOOLS_ARROWPROPERTIES "Customize arrows\nArrow properties"
+    ID_TOOLS_IMAGESETUP     "Customize Image Options\nImage options"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Currents2D3D.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,23 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=currents2d3d.chm
+Default Window=frame
+Default topic=Help Topics.htm
+Display compile progress=No
+Language=0x409 English (United States)
+
+[WINDOWS]
+frame="Currents2D3D online help",,,"Help Topics.htm",,,,,,0x2020,,0x200c,,,,,,,,0
+
+
+[FILES]
+Theory.htm
+Future plans.htm
+Help Topics.htm
+Program features.htm
+RenderingOptions.htm
+CalculationDetails.htm
+ComplexEigenvalueProblem.htm
+
+[INFOTYPES]
+
